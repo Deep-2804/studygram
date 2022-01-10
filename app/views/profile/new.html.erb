@@ -1,0 +1,37 @@
+<h1>Profile#new</h1>
+
+<%= form_with profile: @profile do |form| %>
+  <div>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name %><br>
+    <%= form.text_area :last_name %>
+  </div>
+
+    <div>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
+  </div>
+
+    <div>
+    <%= form.label :contact_number %><br>
+    <%= form.text_area :contact_number %>
+  </div>
+
+    <div>
+    <%= form.label :college_name %><br>
+    <%= form.text_area :college_name %>
+  </div>
+
+    <div>
+    <%= form.label :interested_subjects %><br>
+    <%= form.text_area :interested_subjects %>
+  </div>
+
+  <div>
+    <%= form.submit "Create Profile" %>
+  </div>
+<% end %>
